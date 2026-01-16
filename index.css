@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* 基本樣式重置和全局樣式 */
 * {
   margin: 0;
