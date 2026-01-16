@@ -36,6 +36,15 @@ jobs:
         env:
           VITE_BASE_PATH: /dealcrm/
 
+      - name: Verify build output
+        run: |
+          echo "Checking dist folder contents..."
+          ls -la dist/
+          echo "Checking dist/assets contents..."
+          ls -la dist/assets/ || echo "No assets folder found"
+          echo "Checking index.html..."
+          head -20 dist/index.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
