@@ -1,9 +1,10 @@
 @import "tailwindcss";
 
+@source "../**/*.{html,js,ts,jsx,tsx}";
 @source "../index.html";
-@source "../*.{js,ts,jsx,tsx}";
-@source "../components/**/*.{js,ts,jsx,tsx}";
 @source "../App.tsx";
+@source "../components";
+@source "../components/**/*.{js,ts,jsx,tsx}";
 
 /* 基本樣式重置和全局樣式 */
 * {
